@@ -1,14 +1,12 @@
-<md-tab-group>
-  <md-tab label="Home">
-
-  </md-tab>
-  <md-tab label="Terms and Conditions">
-
-  </md-tab>
-</md-tab-group>
-<div layout="row">
-  <h1>
-    {{title}}
-  </h1>
-  <app-terms-and-conditions></app-terms-and-conditions>
+<div class="flex-container">
+  <nav md-tab-nav-bar>
+      <a md-tab-link
+          *ngFor="let routeLink of routeLinks; let i = index"
+           [routerLink]="routeLink.link"
+           [active]="activeLinkIndex === i"
+           (click)="activeLinkIndex = i">
+           {{routeLink.label}}
+       </a>
+  </nav>
+  <router-outlet></router-outlet>
 </div>
