@@ -1,0 +1,35 @@
+<div class="flex-container"
+     fxLayout="row"
+     fxLayout.xs="column"
+     fxLayoutAlign="center center"
+     fxLayoutAlign.xs="start">
+    <!-- <div layout="row" layout-margin> -->
+    <div class="flex-item" fxFlex="5%" fxFlex.xs="10%">  </div>
+        <div class="flex-item" fxFlex>
+          <h1 class="md-display-3">84.51° Data Set Registration</h1>
+          <h3 class="md-headline">
+            WELCOME TO THE PUBLIC APIs of 84.51° DATA SETS
+          </h3>
+          <p></p>
+
+          <md-card>
+            <p>To use the 84.51° data sets, you need to read and accept the Terms and Conditions.</p>
+            <md-checkbox
+              [checked]="checkboxTruthy"
+              (change)="toggleCheckbox()">
+              I accept the Terms and Conditions</md-checkbox>
+              <p></p>
+              <div>
+                <button md-raised-button color="primary" [disabled]="!checkboxTruthy">ACCEPT</button>
+              </div>
+          </md-card>
+          <p></p>
+          <md-card>
+            <p>Login Using Your Github Credentials</p>
+            <div>
+              <button md-raised-button color="primary" [disabled]="!checkboxTruthy">LOGIN</button>
+            </div>
+          </md-card>
+          </div>
+  <div class="flex-item" fxFlex="5%" fxFlex.xs="10%">  </div>
+</div>
