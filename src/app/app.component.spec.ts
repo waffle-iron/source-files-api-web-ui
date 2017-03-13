@@ -1,14 +1,18 @@
 import { TestBed, async, inject } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('AppComponent', () => {
+
   const mockRouter = { navigate: jasmine.createSpy('navigate') };
+
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
       ],
+      imports: [RouterTestingModule],
       providers: [
         {
           provide: Router,
