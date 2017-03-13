@@ -1,4 +1,8 @@
-<div class="flex-container">
+<div class="widgets-row"
+ fxLayout
+ fxLayout.xs="column"
+ fxLayoutAlign="start"
+ fxLayoutWrap="wrap">
   <nav md-tab-nav-bar>
       <a md-tab-link
           *ngFor="let routeLink of routeLinks; let i = index"

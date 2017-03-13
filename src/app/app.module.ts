@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-conditions.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import {} from 'jasmine';
 
 @NgModule({
   declarations: [
