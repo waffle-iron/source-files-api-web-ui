@@ -8,6 +8,7 @@ describe('AppComponent', () => {
   const mockRouter = { navigate: jasmine.createSpy('navigate') };
 
   beforeEach(() => {
+
     TestBed.configureTestingModule({
       declarations: [
         AppComponent
@@ -27,6 +28,8 @@ describe('AppComponent', () => {
     [Router], (router) => {
       const fixture = TestBed.createComponent(AppComponent);
       const app = fixture.debugElement.componentInstance;
+
       expect(app).toBeTruthy();
     })));
+
 });
