@@ -1,0 +1,13 @@
+ol {
+  counter-reset: item;
+  line-height: 150%;
+}
+
+li {
+  display: block
+}
+
+li:before {
+  content: counters(item, ".") " ";
+  counter-increment: item
+}
