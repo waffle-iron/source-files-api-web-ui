@@ -13,6 +13,7 @@ export class AppComponent {
 
   constructor(private router: Router) {
     this.routeLinks = [
+      { label: 'Registration', link: 'registration' },
       { label: 'Profile', link: 'profile' },
       { label: 'Terms', link: 'terms' }
     ];

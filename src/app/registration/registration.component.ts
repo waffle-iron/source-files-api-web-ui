@@ -12,8 +12,8 @@ export class RegistrationComponent implements OnInit {
   ngOnInit() {
   }
 
-  toggleCheckbox(){
-   this.checkboxTruthy = !this.checkboxTruthy;
-}
+  toggleCheckbox() {
+    this.checkboxTruthy = !this.checkboxTruthy;
+  }
 
 }
