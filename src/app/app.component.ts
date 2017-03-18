@@ -13,8 +13,11 @@ export class AppComponent {
 
   constructor(private router: Router) {
     this.routeLinks = [
-      // { label: 'Profile', link: 'profile' },
+      { label: 'Registration', link: 'registration' },
+      { label: 'Profile', link: 'profile' },
       { label: 'Terms', link: 'terms' }
     ];
+
+    this.activeLinkIndex = this.routeLinks.indexOf(this.routeLinks.find(tab => router.url.indexOf(tab.link) !== -1));
   }
 }
