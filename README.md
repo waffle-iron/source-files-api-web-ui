@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/8451/source-files-api-web-ui.png?label=ready&title=Ready)](https://waffle.io/8451/source-files-api-web-ui)
 # source-files-api-web-ui
 
 # Static content
