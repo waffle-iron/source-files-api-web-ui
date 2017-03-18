@@ -5,18 +5,27 @@
       <md-card>
         <h3>API Data Keys for {{githubUserId}}</h3>
         <div>
-          <i class="material-icons green md-inactive">library_add</i>
+          <i class="material-icons green">library_add</i>
         </div>
         <table *ngFor="let apiKey of apiKeys" >
           <tr>
-            <td width="70%">
+            <td width="80%">
               {{ apiKey.name }}
             </td>
-            <td width="30%">
-              <i class="material-icons md-18 red" >delete</i> DELETE
+            <td width="20%">
+              <i class="material-icons md-18 red" >delete</i>
             </td>
           </tr>
         </table>
+      </md-card>
+      <p>
+      </p>
+      <md-card>
+        <div class="md-headline">
+          DELETE MY ACCOUNT FOREVER
+          <i class="material-icons red">delete_forever</i>
+        </div>
+
       </md-card>
     </div>
 </div>
