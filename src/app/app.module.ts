@@ -12,6 +12,7 @@ import { TermsAndConditionsComponent } from './terms-and-conditions/terms-and-co
 import { RegistrationComponent } from './registration/registration.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { SourceWebService } from './services/source-web.service';
+import { Config } from './config';
 
 import {} from 'jasmine';
 
@@ -30,7 +31,10 @@ import {} from 'jasmine';
     MaterialModule.forRoot(),
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
-  providers: [SourceWebService],
+  providers: [
+    SourceWebService,
+    Config
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
